@@ -1,7 +1,97 @@
-*{
+/* shared styles */
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1000px;
+    height: 700px;
     border: 1px solid red;
 }
+
+/* common shared styles start */
+.btn-primary {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* common shared styles end */
+
+/* HEADER */
+
+/* <!-- navbar styles start --> */
+/* <!-- navbar styles end --> */
+
+/* <!-- banner section-styles start --> */
+.header-main {
+    text-align: center;
+    border: 2px solid gold;
+    padding: 140px 160px;
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+
+}
+
+.header-main .travel-description,
+h1 {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.selection-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+
+}
+
+.selection-title p {
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selection-title {
+    border-radius: 8px;
+    background: #FFF;
+    padding-top: 10px;
+    width: 150px;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fa-solid {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* <!-- banner section styles end --> */
+
+
+
+
+/* .text-gray{
+
+} */

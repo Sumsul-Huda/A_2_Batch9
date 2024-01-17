@@ -1,6 +1,6 @@
 /* css styles START--- for responsive */
 @media screen and (max-width: 600px) {
     *{
-        background-color: green;
+        background-color: rgb(238, 182, 182);
     }
 }

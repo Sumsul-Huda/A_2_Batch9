@@ -1,18 +1,22 @@
-/* css styles START--- for responsive */
+/* Responsive for mobile */
 @media screen and (max-width: 600px) {
-    body {
-        border: 1px solid red;
-    }
-    /* .header-main  img{
-        
-        width: 100%px;
-        height: 500px;
+    /* .header-main {
+        max-width: 600px;
+        height: auto;
     } */
-    .header-main{
-        width: 100%;
-        /* background-size: 400px; */
-    }
-    .selection-container{
+
+    .selection-container,
+    .popular-section-container {
         flex-direction: column;
     }
+
+    .popular-section-info {
+        width: 100%;
+    }
+
+    .popular-section-img {
+        width: 100%;
+    }
+
+    .travel-description {}
 }

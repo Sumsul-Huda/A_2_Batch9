@@ -6,11 +6,13 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: rgb(229, 229, 229); */
     font-family: 'Open Sans', sans-serif;
     /* width: 1000px; */
-    height: 700px;
-    border: 10px solid red;
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
 }
 
 /* common shared styles start */
@@ -26,6 +28,20 @@ body {
     font-weight: 700;
 }
 
+.info-title {
+    color: #131318;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.text-gray {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 /* common shared styles end */
 
 /* HEADER */
@@ -38,19 +54,22 @@ body {
     width: 100%px;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
     padding: 140px 160px;
+
 
 
 }
 
 .header-img {
-    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    border-radius: 16px;
+    background: linear-gradient(150deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) , url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
     border-radius: 8px;
     width: 100%px;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .header-main .travel-description,
@@ -101,27 +120,74 @@ h1 {
 
 /* <!-- banner section styles end --> */
 
+/* <!-- our popular tours section styles START --> */
+.popular-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.popular-section-info {
+    width: 50%;
+    height: auto;
+    /* margin-left: 20px; */
+    padding-left: 25px;
+    /* border: 2px solid rgb(1, 207, 39); */
+
+}
+
+.popular-info-title {
+    margin-right: 100px;
+}
+
+.btn-popular {
+    margin: 20px 0 15px 0;
+}
+
+.popular-section-img {
+    width: 50%;
+    height: auto;
+    /* border: 2px solid rgb(144, 12, 12); */
+}
+
+.popular-section-img img {
+    width: 100%;
+    background-repeat: no-repeat;
+    /* border: 5px solid navajowhite; */
+    height: auto;
+    /* padding: 15px; */
+
+}
+
+/* <!-- our popular tours section styles END --> */
 
 
 
-/* .text-gray{
 
-} */
 
 
 /* responsive css */
-
+/* Responsive for mobile */
 @media screen and (max-width: 600px) {
-    .header-main {
+    /* .header-main {
         max-width: 600px;
         height: auto;
+    } */
+
+    .selection-container,
+    .popular-section-container {
+        flex-direction: column;
     }
 
-    .selection-container {
-        flex-direction: column;
+    .popular-section-info {
+        width: 100%;
+    }
+
+    .popular-section-img {
+        width: 100%;
     }
 
     .travel-description {}
 }
-
-@media screen and (max-width: 600px) {}

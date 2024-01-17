@@ -2,13 +2,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-color: black;
     font-family: 'Open Sans', sans-serif;
-    width: 1000px;
+    /* width: 1000px; */
     height: 700px;
-    border: 1px solid red;
+    border: 10px solid red;
 }
 
 /* common shared styles start */
@@ -33,12 +35,22 @@ body {
 
 /* <!-- banner section-styles start --> */
 .header-main {
+    width: 100%px;
+    margin: 0 auto;
     text-align: center;
     border: 2px solid gold;
     padding: 140px 160px;
+
+
+}
+
+.header-img {
     background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
-
+    border-radius: 8px;
+    width: 100%px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header-main .travel-description,
@@ -95,3 +107,21 @@ h1 {
 /* .text-gray{
 
 } */
+
+
+/* responsive css */
+
+@media screen and (max-width: 600px) {
+    .header-main {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .selection-container {
+        flex-direction: column;
+    }
+
+    .travel-description {}
+}
+
+@media screen and (max-width: 600px) {}

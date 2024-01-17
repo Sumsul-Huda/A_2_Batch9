@@ -1,6 +1,18 @@
 /* css styles START--- for responsive */
 @media screen and (max-width: 600px) {
-    *{
-        background-color: rgb(238, 182, 182);
+    body {
+        border: 1px solid red;
+    }
+    /* .header-main  img{
+        
+        width: 100%px;
+        height: 500px;
+    } */
+    .header-main{
+        width: 100%;
+        /* background-size: 400px; */
+    }
+    .selection-container{
+        flex-direction: column;
     }
 }

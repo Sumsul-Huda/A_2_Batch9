@@ -388,6 +388,7 @@ img {
     /* margin: 55px 0; */
     border: 2px dotted rgb(248, 9, 9);
 }
+
 .img-container .text-white {
     text-align: center;
     color: #FFF;
@@ -399,23 +400,127 @@ img {
     height: 80px;
     /* color: red; */
     position: absolute;
-    
     top: 45%;
     left: 30%;
 }
-.img-container .controls-icon {
-    
+
+
+.controls-icon ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.controls-icon ul .li-1,
+.li-2 {
+    display: flex;
+    gap: 15px;
+    margin: 10px 10px;
+    /* margin: 10px 15px 15px 10px; */
+    /* justify-content: space-around; */
+    list-style: none;
+}
+
+.controls-icon,
+.controls-icon ul {
+    width: 100%;
+    /* padding: 10px; */
     position: absolute;
-    top: 45%;
-    left: 30%;
-    border:  2px solid chocolate;
+    top: 78%;
+    /* left: 30%; */
+    /* border: 2px solid chocolate; */
 }
+
+.horizontal-line {}
+
+.icon-container .icons {
+    color: #F3F3F3;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .Perfect-place-container img {
     /* display: none; */
 }
 
 /* A Simple Perfect Place section styles END */
 
+/* Form section style START */
+.form-discount-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid deeppink;
+}
+
+.discount-details {}
+
+.form-horizontal {
+    width: 100%;
+    margin: 10px 0;
+
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.form-container,
+.discount-container {
+    gap: 10px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.form-container {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    background: #FFF;
+    padding: 20px;
+
+}
+
+.form .input-field input {
+    padding-left: 15px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(19, 19, 24, 0.05);
+    width: 380px;
+    height: 50px;
+    /* text-align: center; */
+    /* width: 350px;
+    height: 40px;
+    border-radius: 5px; */
+    margin: 15px 0;
+    /* margin: 10px 20px; */
+}
+
+.btn {
+    border: 0;
+    color: rgb(240, 238, 238);
+    border-radius: 8px;
+    background: #FF5400;
+    width: 393px;
+    height: 52px;
+}
+
+.rotate-img{position: absolute;
+   
+}
+
+.discount-card{
+    border-radius: 16px;
+    background: #FF5400;
+    width: 200px;
+    height: 75px;
+    transform: rotate(-19.628deg);
+
+    
+     position: relative;
+    top: 60%;
+    left: 55%;
+    /* rotate: 330deg; */
+    
+}
+/* Form section style END */
 
 /* responsive css for mobile*/
 
@@ -494,6 +599,21 @@ img {
         border: 2px solid rgb(0, 0, 0);
     }
 
+    .form-discount-container {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .discount-container,
+    .form,
+    .input-field,
+    .btn {
+        width: 100%;
+    }
+    .discount-card{
+        top: 250px;
+        left: 350px;
+    }
     .date-time-info {
         /* border: 2px solid red; */
     }

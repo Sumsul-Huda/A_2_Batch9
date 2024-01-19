@@ -8,7 +8,6 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
-
     width: auto;
     height: auto;
 
@@ -46,6 +45,41 @@ body {
 /* HEADER */
 
 /* <!-- navbar styles start --> */
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+   
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.menu {
+    margin: 20px 0;
+    width: 50%;
+    height: 50px;
+   
+}
+
+.menu ul {
+
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+    margin-top: 5px;
+    align-items: center;
+    list-style: none;
+
+}
+
 /* <!-- navbar styles end --> */
 
 /* <!-- banner section-styles start --> */
@@ -293,14 +327,14 @@ h1 {
 /* Deals & Discounts section styles START */
 .deal-discount-container {
     padding: 15px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 15px;
 }
 
 .row-imag-details-container {
 
     width: 100%;
-    border: 2px dotted rgb(82, 7, 245);
+    /* border: 2px dotted rgb(82, 7, 245); */
 }
 
 .row-1-container,
@@ -308,13 +342,13 @@ h1 {
 .row-3-container {
     position: relative;
     /* margin: 55px 0; */
-    border: 2px dotted rgb(248, 9, 9);
+    /* border: 2px dotted rgb(248, 9, 9); */
 
 }
 
 .row-1-container .row-2-container .row-3-container,
 img {
-    border: 5px solid yellowgreen;
+    /* border: 5px solid yellowgreen; */
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -329,11 +363,11 @@ img {
 .internal-details-container {
     border-radius: 16px;
     padding: 15px;
-    /* border: 2px solid #FFF; */
+    border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
     width: 50%;
-    border: 4px double rgb(255, 215, 0);
+    /* border: 4px double rgb(255, 215, 0); */
     position: absolute;
     top: 15%;
     left: 45%;
@@ -349,7 +383,7 @@ img {
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
     width: 50%;
-    border: 4px double rgb(255, 215, 0);
+    /* border: 4px double rgb(255, 215, 0); */
     position: absolute;
     top: 15%;
     left: 5%;
@@ -386,7 +420,7 @@ img {
 .popular-section-container .img-container {
     position: relative;
     /* margin: 55px 0; */
-    border: 2px dotted rgb(248, 9, 9);
+    /* border: 2px dotted rgb(248, 9, 9); */
 }
 
 .img-container .text-white {
@@ -449,9 +483,13 @@ img {
 
 /* Form section style START */
 .form-discount-container {
-    display: flex;
+
     width: 100%;
-    border: 2px solid deeppink;
+    height: auto;
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+    /* border: 2px solid deeppink; */
 }
 
 .discount-details {}
@@ -465,16 +503,17 @@ img {
 
 .form-container,
 .discount-container {
-    gap: 10px;
+    gap: 5px;
     width: 50%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .form-container {
+    width: 50%;
     border-radius: 16px;
     border: 1px solid #FF5400;
     background: #FFF;
-    padding: 20px;
+    padding: 15px;
 
 }
 
@@ -484,7 +523,7 @@ img {
     border: 0;
     background: rgba(19, 19, 24, 0.05);
     width: 380px;
-    height: 50px;
+    height: 45px;
     /* text-align: center; */
     /* width: 350px;
     height: 40px;
@@ -502,30 +541,115 @@ img {
     height: 52px;
 }
 
-.rotate-img{position: absolute;
-   
+.rotate-img {
+    width: 50%;
+    /* height: auto; */
+    position: absolute;
+
 }
 
-.discount-card{
+.discount-card {
     border-radius: 16px;
     background: #FF5400;
     width: 200px;
     height: 75px;
     transform: rotate(-19.628deg);
 
-    
-     position: relative;
+
+    position: relative;
     top: 60%;
     left: 55%;
     /* rotate: 330deg; */
-    
+
 }
+
 /* Form section style END */
+
+
+/* footer section START */
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-container {}
+
+.footer-title .footer-name {
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.footer-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.footer-img-container img {
+    margin-top: 6px;
+    width: 40px;
+    height: 35px;
+    /* object-fit: cover    */
+}
+
+.footer-description p {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+.footer-icon ul li {
+    list-style: none;
+}
+
+.footer-icon ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.last-text {
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.hr-line {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.travel {
+    color: #FF5400;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hero-travel {
+    color: #131318;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+/* footer section END */
+
+
+
 
 /* responsive css for mobile*/
 
 @media screen and (max-width: 600px) {
-
+    .menu{
+        display: none;
+    }
     .selection-container,
     .popular-section-container {
         flex-direction: column;
@@ -589,7 +713,7 @@ img {
     }
 
     .row-imag-details-container img {
-        height: 500px;
+        /* height: 500px; */
     }
 
     .internal-details-container {
@@ -603,6 +727,7 @@ img {
         flex-direction: column;
     }
 
+    .rotate-img,
     .form-container,
     .discount-container,
     .form,
@@ -610,10 +735,12 @@ img {
     .btn {
         width: 100%;
     }
-    .discount-card{
+
+    .discount-card {
         top: 250px;
         left: 350px;
     }
+
     .date-time-info {
         /* border: 2px solid red; */
     }

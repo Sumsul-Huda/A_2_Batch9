@@ -51,7 +51,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.home{
+    
+        color: #FF5400;
+        font-size: 18px;
+        font-weight: 700;
+        
+  
+}
 .nav-title {
    
     width: 50%;
@@ -483,7 +490,7 @@ img {
 
 /* Form section style START */
 .form-discount-container {
-
+    /* padding: 15px; */
     width: 100%;
     height: auto;
     display: flex;
@@ -666,10 +673,8 @@ img {
         width: 400px;
     }
 
-    .header-welcome,
-    p {
-        /* width: 400px;
-       margin: 0 auto; */
+    .header-main {
+        padding: 30px 50px;
     }
 
     .selection-title {
@@ -713,7 +718,7 @@ img {
     }
 
     .row-imag-details-container img {
-        /* height: 500px; */
+        height: 500px;
     }
 
     .internal-details-container {
@@ -735,15 +740,15 @@ img {
     .btn {
         width: 100%;
     }
-
+    .discount-container ,.rotate-img img{
+       height: 400px;
+    }
     .discount-card {
-        top: 250px;
-        left: 350px;
+        top: 290px;
+        left: 359px;
     }
 
     .date-time-info {
         /* border: 2px solid red; */
     }
-
-    .travel-description {}
 }
